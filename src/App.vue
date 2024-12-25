@@ -6,5 +6,5 @@
 
 <script setup>
 import Menu from './components/Menu.vue'
-import Footer from './components/footer.vue'
+import Footer from './components/Footer.vue'
 </script>
