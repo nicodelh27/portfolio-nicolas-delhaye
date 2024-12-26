@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
 import './assets/styles/global.css'
+import 'aos/dist/aos.css'
+
 
 const app = createApp(App)
 
