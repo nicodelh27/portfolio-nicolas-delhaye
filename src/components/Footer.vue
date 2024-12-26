@@ -24,8 +24,8 @@
         <div class="col-12 col-sm-12 col-md-4">
           <h5>Contact</h5>
           <ul class="list-unstyled">
-            <li><a class="text-white" href="mailto:contact@monsite.com">nicolas.delhaye62220@gmail.com</a></li>
-            <li><a class="text-white" href="tel:+123456789">06 51 32 47 83</a></li>
+            <li><a class="text-white" href="mailto:nicolas.delhaye62220@gmail.com">nicolas.delhaye62220@gmail.com</a></li>
+            <li><a class="text-white" href="tel:+33651324783">06 51 32 47 83</a></li>
           </ul>
         </div>
       </div>
