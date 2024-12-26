@@ -101,13 +101,19 @@ import img5 from '@/assets/images/meditrip5.png'
   border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 470px) {
+  #carouselProjects {
+    width: 300px;
+  }
+}
+
+@media (min-width: 471px) {
   #carouselProjects {
     width: 400px;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 700px) {
   #carouselProjects {
     width: 600px;
   }
