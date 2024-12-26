@@ -1,12 +1,13 @@
 <template>
-  <div>
     <h1>Bienvenue sur la première version du site de {{ name }}</h1>
     <button v-on:click="addName">Ajouter</button>
     <button v-on:click="delName">Retirer</button>
     <ul>
       <li v-for="item in list" v-bind:key="item">{{ item }}</li>
     </ul>
-  </div>
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
 </template>
 
 <script setup>
