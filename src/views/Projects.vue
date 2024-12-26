@@ -2,7 +2,7 @@
   <h1>Mes projets</h1>
   <h2>Méditrip</h2>
   <p>Application web de gestion de voyages</p>
-  <div id="carouselProjects" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselProjects" class="carousel slide" data-bs-ride="carousel" data-aos="flip-left">
     <!-- Indicators -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -68,14 +68,11 @@
   <h2>Autres projets</h2>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center mb-5">
-        <project-card title="Projet 1" description="Description du projet 1" :img="img1" />
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center mb-5">
-        <project-card title="Projet 2" description="Description du projet 2" :img="img2" />
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center mb-5">
-        <project-card title="Projet 3" description="Description du projet 3" :img="img3" />
+      <div
+          v-for="(project, index) in projects"
+          :key="index"
+          class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center mb-5" data-aos="fade-right">
+          <project-card :title="project.title" :description="project.description" :img="project.img" />
       </div>
     </div>
   </div>
@@ -88,6 +85,26 @@ import img2 from '@/assets/images/meditrip2.png'
 import img3 from '@/assets/images/meditrip3.png'
 import img4 from '@/assets/images/meditrip4.png'
 import img5 from '@/assets/images/meditrip5.png'
+import {onMounted, ref} from "vue";
+
+const projects = [
+  {
+    title: 'Projet 1',
+    description: 'Description du projet 1',
+    img: img1
+  },
+  {
+    title: 'Projet 2',
+    description: 'Description du projet 2',
+    img: img2
+  },
+  {
+    title: 'Projet 3',
+    description: 'Description du projet 3',
+    img: img3
+  }
+]
+
 </script>
 
 <style scoped>
