@@ -11,3 +11,14 @@
 <script setup>
 const props = defineProps(['title', 'description', 'img'])
 </script>
+
+<style scoped>
+.card {
+  transform: rotate(0deg) scale(1);
+  transition: transform 0.2s linear;
+}
+
+.card:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+</style>
