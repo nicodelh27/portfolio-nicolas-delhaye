@@ -22,11 +22,24 @@ onMounted(() => {
 </script>
 
 <style>
-#main {
+
+nav{
   width: 100%;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
 }
 
 @keyframes scroll {
