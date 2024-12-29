@@ -1,7 +1,9 @@
 <template>
   <h1>Mes projets</h1>
   <h2>Méditrip</h2>
-  <p>Application web de gestion de voyages</p>
+  <p id="description">Nous avons réalisé ce projet en équipe dans le cadre du Marathon du Web, un évènement organisé par notre école qui se déroule durant 48 heures sans pause.
+  Le but de ce projet était de créer un site web de gestion de voyage où chacun pourrait raconter ses aventures.
+  Nous avons réalisé le site avec Laravel.</p>
   <div id="carouselProjects" class="carousel slide" data-bs-ride="carousel" data-aos="flip-left">
     <!-- Indicators -->
     <div class="carousel-indicators">
@@ -85,23 +87,26 @@ import img2 from '@/assets/images/meditrip2.png'
 import img3 from '@/assets/images/meditrip3.png'
 import img4 from '@/assets/images/meditrip4.png'
 import img5 from '@/assets/images/meditrip5.png'
+import bomberman1 from '@/assets/images/bomberman1.png'
+import flask1 from '@/assets/images/flask1.png'
+import reseau from '@/assets/images/reseau.jpg'
 import {onMounted, ref} from "vue";
 
 const projects = [
   {
-    title: 'Projet 1',
-    description: 'Description du projet 1',
-    img: img1
+    title: 'Bomberman',
+    description: 'Reproduction du jeu vidéo Bomberman en Java et JavaFX et création d\'un exécutable',
+    img: bomberman1
   },
   {
-    title: 'Projet 2',
-    description: 'Description du projet 2',
-    img: img2
+    title: 'Juste Prix',
+    description: 'Création du jeu iconique du Juste Prix en python et Flask grâce à une API repertoriant les produits d\'Amazon',
+    img: flask1
   },
   {
-    title: 'Projet 3',
-    description: 'Description du projet 3',
-    img: img3
+    title: 'Conception d\'un réseau',
+    description: 'Protocole TCP/IP, mise en place du routage, configuration des services DHCP/DNS/HTTP',
+    img: reseau
   }
 ]
 
@@ -157,5 +162,25 @@ const projects = [
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
   background-color: #0028c7; /* Couleur des flèches au survol */
+}
+
+#description {
+  width: 50%;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  #description {
+    width: 70%; /* Réduire la largeur sur les petits écrans */
+  }
+}
+
+@media (max-width: 480px) {
+  #description {
+    width: 80%; /* Réduire davantage sur les très petits écrans */
+  }
+  img {
+    width: 250px; /* Réduire la taille de l'image */
+  }
 }
 </style>
