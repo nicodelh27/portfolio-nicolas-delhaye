@@ -104,6 +104,11 @@ img {
   width: 100%;
   height: auto;
 }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; /* Annule les marges latérales de la grille Bootstrap */
+}
 </style>
 
 <script setup lang="ts">
