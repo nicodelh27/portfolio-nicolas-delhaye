@@ -48,7 +48,7 @@ import logo from '@/assets/images/logo.png'
 }
 
 .nav-link {
-  font-size: 24px;
+  font-size: 22px;
   color: var(--black-color);
 }
 
@@ -63,10 +63,13 @@ import logo from '@/assets/images/logo.png'
   .navbar .nav-link.router-link-active{
     border: 0;
   }
+  .nav-link {
+    font-size: 18px;
+  }
 }
 
 img {
-  width: 100px;
+  width: 80px;
   margin-left: 30px;
 }
 
