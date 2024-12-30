@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">
         <img :src="logo" alt="Logo">
@@ -41,13 +41,36 @@ import logo from '@/assets/images/logo.png'
   gap: 25px; /* Espace entre les liens */
 }
 
-img {
-  width: 100px;
-  margin-left: 30px;
+.navbar .nav-link.router-link-active {
+  color: var(--dark-blue-color);
+  font-weight: 700;
+  border-bottom: var(--dark-blue-color) 2px solid;
 }
 
 .nav-link {
-  font-size: 24px;
+  font-size: 22px;
   color: var(--black-color);
 }
+
+.nav-link:hover {
+  color: var(--dark-blue-color);
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    gap: 0;
+  }
+  .navbar .nav-link.router-link-active{
+    border: 0;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+img {
+  width: 80px;
+  margin-left: 30px;
+}
+
 </style>

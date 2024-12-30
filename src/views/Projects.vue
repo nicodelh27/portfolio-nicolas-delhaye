@@ -175,12 +175,28 @@ const projects = [
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
   #description {
     width: 80%; /* Réduire davantage sur les très petits écrans */
   }
   img {
     width: 250px; /* Réduire la taille de l'image */
   }
+}
+
+h1 {
+  margin-top: 60px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 </style>

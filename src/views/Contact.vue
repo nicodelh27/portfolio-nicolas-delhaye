@@ -1,17 +1,72 @@
 <template>
-  <div>
     <h1>Contact</h1>
-    <p>N'hésitez pas à me contacter par les moyens suivants :</p>
-    <ul class="list-unstyled" data-aos="fade-left">
-      <li>Par téléphone : <a class="text-white" href="tel:+33651324783" target="_blank"><img src="@/assets/icons/phone.svg" alt="phone icon">06 51 32 47 83</a></li>
-      <li>Par email : <a class="text-white" href="mailto:nicolas.delhaye62220@gmail.com" target="_blank"><img src="@/assets/icons/envelope-at.svg" alt="email icon">nicolas.delhaye62220@gmail.com</a></li>
-    </ul>
-    <p>Mes réseaux :</p>
-    <ul class="list-unstyled" data-aos="fade-right">
-      <li><img src="@/assets/icons/linkedin.svg" alt="linkedin icon"><a class="text-white" href="https://www.linkedin.com/in/nicolas-delhaye-carvin-informatique-iut-lens/" target="_blank">LinkedIn</a></li>
-      <li><img src="@/assets/icons/github.svg" alt="github icon"><a class="text-white" href="https://github.com/nicodelh27" target="_blank">GitHub</a></li>
-    </ul>
-  </div>
+    <div id="contact">
+      <h2>N'hésitez pas à me contacter par les moyens suivants :</h2>
+      <ul class="list-unstyled" data-aos="fade-left">
+        <li><a href="tel:+33651324783" target="_blank"><img src="@/assets/icons/phone.svg" alt="phone icon">06 51 32 47 83</a></li>
+        <li><a href="mailto:nicolas.delhaye62220@gmail.com" target="_blank"><img src="@/assets/icons/envelope-at.svg" alt="email icon">nicolas.delhaye62220@gmail.com</a></li>
+      </ul>
+      <h2>Mes réseaux :</h2>
+      <ul class="list-unstyled" data-aos="fade-right">
+        <li><a href="https://www.linkedin.com/in/nicolas-delhaye-carvin-informatique-iut-lens/" target="_blank"><img src="@/assets/icons/linkedin.svg" alt="linkedin icon">LinkedIn</a></li>
+        <li><a href="https://github.com/nicodelh27" target="_blank"><img src="@/assets/icons/github.svg" alt="github icon">GitHub</a></li>
+      </ul>
+    </div>
 </template>
-<script setup lang="ts">
-</script>
+
+<style scoped>
+
+h1 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+#contact {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #contact {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  li a {
+    font-size: 15px;
+  }
+}
+
+li {
+  background-color: var(--white-color);
+  padding: 20px 30px;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+li a {
+  color: var(--darker-blue-color);
+  font-size: 20px;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+a:hover {
+  color: var(--light-blue-color);
+}
+
+img {
+  width: 30px;
+  margin-right: 15px;
+}
+</style>

@@ -10,7 +10,7 @@
         </p>
       </div>
       <div class="col-12 col-md-6 d-flex justify-content-center image-container">
-        <img src="@/assets/images/me_bg_remove.png" alt="Nicolas Delhaye">
+        <img src="../assets/images/me.png" alt="Nicolas Delhaye">
       </div>
     </div>
   </div>
