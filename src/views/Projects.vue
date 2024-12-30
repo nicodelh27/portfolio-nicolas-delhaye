@@ -183,4 +183,14 @@ const projects = [
     width: 250px; /* Réduire la taille de l'image */
   }
 }
+
+h1 {
+  margin-top: 60px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 </style>
