@@ -22,7 +22,7 @@
 <style scoped>
 
 .container {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 80px;
 }
 

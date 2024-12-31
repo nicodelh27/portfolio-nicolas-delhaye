@@ -17,7 +17,7 @@
 <style scoped>
 
 h1 {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 
@@ -27,6 +27,7 @@ h2 {
 
 #contact {
   width: 50%;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
