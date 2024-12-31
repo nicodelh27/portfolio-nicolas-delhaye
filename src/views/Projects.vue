@@ -1,5 +1,6 @@
 <template>
   <h1>Mes projets</h1>
+  <hr class="custom-line">
   <h2>Méditrip</h2>
   <p id="description">Nous avons réalisé ce projet en équipe dans le cadre du Marathon du Web, un évènement organisé par notre école qui se déroule durant 48 heures sans pause.
   Le but de ce projet était de créer un site web de gestion de voyage où chacun pourrait raconter ses aventures.
@@ -67,6 +68,7 @@
     </button>
   </div>
 
+  <hr class="custom-line">
   <h2>Autres projets</h2>
   <div class="container">
     <div class="row">
@@ -155,13 +157,16 @@ const projects = [
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #6d7fe2; /* Couleur des flèches */
+  background-color: var(--blue-color); /* Couleur des flèches */
+  color: var(--white-color); /* Couleur de l'icône */
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
 }
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-  background-color: #0028c7; /* Couleur des flèches au survol */
+
 }
 
 #description {
@@ -188,6 +193,11 @@ const projects = [
   img {
     width: 250px; /* Réduire la taille de l'image */
   }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 h1 {
@@ -198,5 +208,19 @@ h1 {
 h2 {
   text-align: center;
   margin-bottom: 30px;
+}
+
+h5 {
+  color: var(--white-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.custom-line {
+  border: none;
+  width: 150px; /* Longueur de la ligne */
+  height: 3px; /* Épaisseur de la ligne */
+  background-color: var(--light-blue-color); /* Couleur personnalisée */
+  margin: 20px 0; /* Espace autour de la ligne */
 }
 </style>
