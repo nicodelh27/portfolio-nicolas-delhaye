@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row mb-4">
       <div class="col-12 col-md-6 information">
         <h1>Nicolas Delhaye</h1>
         <h2>Développeur informatique junior</h2>
@@ -11,6 +11,20 @@
       </div>
       <div class="col-12 col-md-6 d-flex justify-content-center image-container">
         <img src="../assets/images/me.png" alt="Nicolas Delhaye">
+      </div>
+    </div>
+    <div class="row" id="btn-row">
+      <div class="col-12 col-sm-6 d-flex justify-content-sm-end justify-content-center">
+        <a href="/cv_fr_nicolas_delhaye.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Mon CV
+          <img src="@/assets/icons/french.png" alt="drapeau français">
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 d-flex justify-content-sm-start justify-content-center">
+        <a href="/cv_en_nicolas_delhaye.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          My CV
+          <img src="@/assets/icons/english.png" alt="drapeau anglais">
+        </a>
       </div>
     </div>
   </div>
@@ -62,5 +76,34 @@ img {
 p {
   text-align: justify;
   width: 90%;
+}
+
+.btn {
+  background-color: var(--light-blue-color);
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 0;
+  font-size: 24px;
+  width: 200px;
+
+  display: flex; /* Active Flexbox */
+  align-items: center; /* Centre verticalement */
+  justify-content: center; /* Centre horizontalement */
+}
+
+.btn img {
+  width: 26px;
+  margin-left: 15px;
+}
+
+.btn:hover {
+  background-color: var(--dark-blue-color);
+}
+
+@media (max-width: 576px) {
+  #btn-row {
+    gap: 20px; /* Espace entre les boutons */
+    margin-top: 50px;
+  }
 }
 </style>
