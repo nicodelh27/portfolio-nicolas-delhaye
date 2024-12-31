@@ -53,6 +53,15 @@ h3 {
   margin-bottom: 25px;
 }
 
+@media (max-width: 768px) {
+  h3 {
+    margin-bottom: 10px;
+  }
+  .row {
+    gap: 10px;
+  }
+}
+
 .text-white {
   font-size: 18px;
 }
