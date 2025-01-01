@@ -60,24 +60,63 @@
 
     <!-- Section Frameworks et Outils -->
     <div class="row">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-4">
         <h2>Frameworks</h2>
         <div class="grid frameworks">
-          <div class="skill"></div>
-          <div class="skill"></div>
-          <div class="skill"></div>
-          <div class="skill"></div>
-          <div class="skill"></div>
-          <div class="skill"></div>
+          <div class="skill">
+            <div class="image-wrapper">
+              <img src="@/assets/images/skills/laravel.png" alt="Laravel">
+            </div>
+            <p>Laravel</p>
+          </div>
+          <div class="skill">
+            <div class="image-wrapper">
+              <img src="@/assets/images/skills/vue_js.png" alt="Vue.js">
+            </div>
+            <p>Vue.js</p>
+          </div>
+          <div class="skill">
+            <div class="image-wrapper">
+              <img src="@/assets/images/skills/flask.png" alt="Flask">
+            </div>
+            <p>Flask</p>
+          </div>
         </div>
       </div>
-      <div class="col-12 col-md-4 offset-md-2">
+
+      <div class="col-12 col-md-6 offset-md-2">
         <h2>Outils</h2>
         <div class="grid outils">
-          <div class="skill"></div>
-          <div class="skill"></div>
-          <div class="skill"></div>
-          <div class="skill"></div>
+          <div class="skill">
+            <div class="image-wrapper">
+              <img src="@/assets/images/skills/git.png" alt="Git">
+            </div>
+            <p>Git</p>
+          </div>
+          <div class="skill">
+            <div class="image-wrapper">
+              <img src="@/assets/images/skills/gitlab.png" alt="Gitlab">
+            </div>
+            <p>Gitlab</p>
+          </div>
+          <div class="skill">
+            <div class="image-wrapper">
+              <img src="@/assets/images/skills/idea.png" alt="JetBrains IntelliJ Idea">
+            </div>
+            <p>Idea</p>
+          </div>
+          <div class="skill">
+            <div class="image-wrapper">
+              <img src="@/assets/images/skills/phpstorm.png" alt="JetBrains PHPStorm">
+            </div>
+            <p>PHPStorm</p>
+          </div>
+          <div class="skill">
+            <div class="image-wrapper">
+              <img src="@/assets/images/skills/webstorm.png" alt="JetBrains WebStorm">
+            </div>
+            <p>WebStorm</p>
+          </div>
         </div>
       </div>
     </div>
@@ -99,7 +138,8 @@ h1 {
   display: grid;
   gap: 25px; /* Espace entre les blocs */
   width: 100%; /* Utiliser tout l'espace disponible */
-  border: 2px solid black;
+  border: 5px solid var(--light-blue-color); /* Bordure */
+  border-radius: 15px;
   padding: 20px;
 }
 
@@ -110,12 +150,12 @@ h1 {
 
 /* Section Frameworks : 3 colonnes dynamiques */
 .frameworks {
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes dynamiques */
+  grid-template-columns: repeat(2, 1fr); /* 3 colonnes dynamiques */
 }
 
 /* Section Outils : 2 colonnes dynamiques */
 .outils {
-  grid-template-columns: repeat(2, 1fr); /* 2 colonnes dynamiques */
+  grid-template-columns: repeat(3, 1fr); /* 2 colonnes dynamiques */
 }
 
 /* Style des cases */
@@ -131,9 +171,9 @@ h1 {
 .image-wrapper {
   aspect-ratio: 1; /* Maintient un carré parfait */
   width: 100%; /* Prend toute la largeur disponible */
-  border-radius: 5px; /* Coins arrondis */
+  border-radius: 10px; /* Coins arrondis */
   overflow: hidden; /* Coupe les parties débordantes */
-  background-color: var(--light-blue-color); /* Couleur de fond par défaut */
+
   margin-bottom: 10px;
 }
 
