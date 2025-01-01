@@ -1,127 +1,83 @@
 <template>
   <h1>Compétences</h1>
   <div class="container">
-    <!-- Section Langages -->
     <div class="row">
+
+      <!-- Section Langages -->
       <div class="col-12">
         <h2>Langages</h2>
         <div class="grid langages">
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/java.png" alt="Java">
-            </div>
-            <p>Java</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/javascript.png" alt="JavaScript">
-            </div>
-            <p>JavaScript</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/php.png" alt="PHP">
-            </div>
-            <p>PHP</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/python.png" alt="Python">
-            </div>
-            <p>Python</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/html.png" alt="HTML">
-            </div>
-            <p>HTML</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/css.png" alt="CSS">
-            </div>
-            <p>CSS</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/postgresql.png" alt="PostgreSQL">
-            </div>
-            <p>PostgreSQL</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/bash.png" alt="Bash">
-            </div>
-            <p>Bash</p>
-          </div>
+          <SkillCard
+              v-for="(skill, index) in langages"
+              :key="index"
+              :imageSrc="skill.imageSrc"
+              :imageAlt="skill.imageAlt"
+              :label="skill.label"
+          />
         </div>
       </div>
     </div>
 
-    <!-- Section Frameworks et Outils -->
     <div class="row">
+      <!-- Section Frameworks -->
       <div class="col-12 col-md-4">
         <h2>Frameworks</h2>
         <div class="grid frameworks">
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/laravel.png" alt="Laravel">
-            </div>
-            <p>Laravel</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/vue_js.png" alt="Vue.js">
-            </div>
-            <p>Vue.js</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/flask.png" alt="Flask">
-            </div>
-            <p>Flask</p>
-          </div>
+          <SkillCard
+              v-for="(skill, index) in frameworks"
+              :key="index"
+              :imageSrc="skill.imageSrc"
+              :imageAlt="skill.imageAlt"
+              :label="skill.label"
+          />
         </div>
       </div>
 
+      <!-- Section Outils -->
       <div class="col-12 col-md-6 offset-md-2">
         <h2>Outils</h2>
         <div class="grid outils">
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/git.png" alt="Git">
-            </div>
-            <p>Git</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/gitlab.png" alt="Gitlab">
-            </div>
-            <p>Gitlab</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/idea.png" alt="JetBrains IntelliJ Idea">
-            </div>
-            <p>Idea</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/phpstorm.png" alt="JetBrains PHPStorm">
-            </div>
-            <p>PHPStorm</p>
-          </div>
-          <div class="skill">
-            <div class="image-wrapper">
-              <img src="@/assets/images/skills/webstorm.png" alt="JetBrains WebStorm">
-            </div>
-            <p>WebStorm</p>
-          </div>
+          <SkillCard
+              v-for="(skill, index) in outils"
+              :key="index"
+              :imageSrc="skill.imageSrc"
+              :imageAlt="skill.imageAlt"
+              :label="skill.label"
+          />
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+import SkillCard from "@/components/SkillCard.vue";
+
+const langages = [
+  { imageSrc: "/src/assets/images/skills/java.png", imageAlt: "Java", label: "Java" },
+  { imageSrc: "/src/assets/images/skills/javascript.png", imageAlt: "JavaScript", label: "JavaScript" },
+  { imageSrc: "/src/assets/images/skills/php.png", imageAlt: "PHP", label: "PHP" },
+  { imageSrc: "/src/assets/images/skills/python.png", imageAlt: "Python", label: "Python" },
+  { imageSrc: "/src/assets/images/skills/html.png", imageAlt: "HTML", label: "HTML" },
+  { imageSrc: "/src/assets/images/skills/css.png", imageAlt: "CSS", label: "CSS" },
+  { imageSrc: "/src/assets/images/skills/postgresql.png", imageAlt: "PostgreSQL", label: "PostgreSQL" },
+  { imageSrc: "/src/assets/images/skills/bash.png", imageAlt: "Bash", label: "Bash" },
+];
+
+const frameworks = [
+  { imageSrc: "/src/assets/images/skills/laravel.png", imageAlt: "Laravel", label: "Laravel" },
+  { imageSrc: "/src/assets/images/skills/vue_js.png", imageAlt: "Vue.js", label: "Vue.js" },
+  { imageSrc: "/src/assets/images/skills/flask.png", imageAlt: "Flask", label: "Flask" },
+];
+
+const outils = [
+  { imageSrc: "/src/assets/images/skills/git.png", imageAlt: "Git", label: "Git" },
+  { imageSrc: "/src/assets/images/skills/gitlab.png", imageAlt: "Gitlab", label: "Gitlab" },
+  { imageSrc: "/src/assets/images/skills/idea.png", imageAlt: "JetBrains IntelliJ Idea", label: "Idea" },
+  { imageSrc: "/src/assets/images/skills/phpstorm.png", imageAlt: "JetBrains PHPStorm", label: "PHPStorm" },
+  { imageSrc: "/src/assets/images/skills/webstorm.png", imageAlt: "JetBrains WebStorm", label: "WebStorm" },
+];
+</script>
 
 <style scoped>
 h1 {
@@ -156,38 +112,6 @@ h1 {
 /* Section Outils : 2 colonnes dynamiques */
 .outils {
   grid-template-columns: repeat(3, 1fr); /* 2 colonnes dynamiques */
-}
-
-/* Style des cases */
-.skill {
-  display: flex;
-  flex-direction: column; /* Positionne l'image et le texte verticalement */
-  align-items: center; /* Centre horizontalement le contenu */
-  text-align: center;
-  min-width: 0;
-}
-
-/* Conteneur de l'image : maintient le carré */
-.image-wrapper {
-  aspect-ratio: 1; /* Maintient un carré parfait */
-  width: 100%; /* Prend toute la largeur disponible */
-  border-radius: 10px; /* Coins arrondis */
-  overflow: hidden; /* Coupe les parties débordantes */
-
-  margin-bottom: 10px;
-}
-
-/* Les images dans les cases */
-.skill img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Remplit le carré en rognant si nécessaire */
-}
-
-.skill p {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--dark-blue-color); /* Couleur du texte */
 }
 
 /* Responsiveness : Réduction du nombre de colonnes si l'écran est petit */
@@ -239,6 +163,3 @@ h1 {
   margin: 30px 0;
 }
 </style>
-
-<script setup lang="ts">
-</script>

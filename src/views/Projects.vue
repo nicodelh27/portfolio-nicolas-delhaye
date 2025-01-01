@@ -5,7 +5,7 @@
   <p id="description">Nous avons réalisé ce projet en équipe dans le cadre du Marathon du Web, un évènement organisé par notre école qui se déroule durant 48 heures sans pause.
   Le but de ce projet était de créer un site web de gestion de voyage où chacun pourrait raconter ses aventures.
   Nous avons réalisé le site avec Laravel.</p>
-  <div id="carouselProjects" class="carousel slide" data-bs-ride="carousel" data-aos="flip-left">
+  <div id="carouselProjects" class="carousel slide" data-bs-ride="carousel" data-aos="flip-left" data-aos-duration="1500">
     <!-- Indicators -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -75,7 +75,7 @@
       <div
           v-for="(project, index) in projects"
           :key="index"
-          class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center mb-5" data-aos="fade-right">
+          class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center mb-5" data-aos="fade-right" data-aos-duration="1500">
           <project-card :title="project.title" :description="project.description" :img="project.img" />
       </div>
     </div>

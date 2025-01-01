@@ -15,7 +15,7 @@ import AOS from 'aos';
 
 onMounted(() => {
   AOS.init({
-    duration: 1500, // Durée des animations en ms (par défaut : 400)
+    duration: 1000, // Durée des animations en ms (par défaut : 400)
     once: false, // Animation uniquement à la première fois qu'un élément apparaît (par défaut : false)
   });
 })
