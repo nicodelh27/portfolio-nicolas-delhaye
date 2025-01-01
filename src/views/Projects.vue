@@ -18,7 +18,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="carousel-image-wrapper">
-          <img :src="img1" class="d-block w-100" alt="..." loading="eager">
+          <img src="@/assets/images/projects/meditrip1.png" class="d-block w-100" alt="..." loading="eager">
         </div>
         <div class="carousel-caption">
           <h5>Page d'accueil</h5>
@@ -26,7 +26,7 @@
       </div>
       <div class="carousel-item">
         <div class="carousel-image-wrapper">
-          <img :src="img2" class="d-block w-100" alt="..." loading="eager">
+          <img src="@/assets/images/projects/meditrip2.png" class="d-block w-100" alt="..." loading="eager">
         </div>
         <div class="carousel-caption">
           <h5>Création d'un voyage</h5>
@@ -34,7 +34,7 @@
       </div>
       <div class="carousel-item">
         <div class="carousel-image-wrapper">
-          <img :src="img3" class="d-block w-100" alt="..." loading="eager">
+          <img src="@/assets/images/projects/meditrip3.png" class="d-block w-100" alt="..." loading="eager">
         </div>
         <div class="carousel-caption">
           <h5>Section contact</h5>
@@ -42,7 +42,7 @@
       </div>
       <div class="carousel-item">
         <div class="carousel-image-wrapper">
-          <img :src="img4" class="d-block w-100" alt="..." loading="eager">
+          <img src="@/assets/images/projects/meditrip4.png" class="d-block w-100" alt="..." loading="eager">
         </div>
         <div class="carousel-caption">
           <h5>Étapes d'un voyage</h5>
@@ -50,7 +50,7 @@
       </div>
       <div class="carousel-item">
         <div class="carousel-image-wrapper">
-          <img :src="img5" class="d-block w-100" alt="..." loading="eager">
+          <img src="@/assets/images/projects/meditrip5.png" class="d-block w-100" alt="..." loading="eager">
         </div>
         <div class="carousel-caption">
           <h5>Profil utilisateur</h5>
@@ -84,15 +84,9 @@
 
 <script setup>
 import ProjectCard from '@/components/ProjectCard.vue'
-import img1 from '@/assets/images/meditrip1.png'
-import img2 from '@/assets/images/meditrip2.png'
-import img3 from '@/assets/images/meditrip3.png'
-import img4 from '@/assets/images/meditrip4.png'
-import img5 from '@/assets/images/meditrip5.png'
-import bomberman1 from '@/assets/images/bomberman1.png'
-import flask1 from '@/assets/images/flask1.png'
-import reseau from '@/assets/images/reseau.jpg'
-import {onMounted, ref} from "vue";
+import bomberman1 from '@/assets/images/projects/bomberman1.png'
+import flask1 from '@/assets/images/projects/flask1.png'
+import reseau from '@/assets/images/projects/reseau.jpg'
 
 const projects = [
   {
