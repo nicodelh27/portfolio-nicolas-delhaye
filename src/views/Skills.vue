@@ -85,6 +85,12 @@ h1 {
   margin-top: 50px;
 }
 
+
+h2 {
+  padding-left: 10px;
+  border-left: 2px solid var(--light-blue-color);
+}
+
 .container{
   max-width: 900px;
 }
