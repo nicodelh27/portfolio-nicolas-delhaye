@@ -52,30 +52,46 @@
 
 <script setup>
 import SkillCard from "@/components/SkillCard.vue";
+import java from "@/assets/images/skills/java.png";
+import javascript from "@/assets/images/skills/javascript.png";
+import php from "@/assets/images/skills/php.png";
+import python from "@/assets/images/skills/python.png";
+import html from "@/assets/images/skills/html.png";
+import css from "@/assets/images/skills/css.png";
+import postgresql from "@/assets/images/skills/postgresql.png";
+import bash from "@/assets/images/skills/bash.png";
+import laravel from "@/assets/images/skills/laravel.png";
+import vue_js from "@/assets/images/skills/vue_js.png";
+import flask from "@/assets/images/skills/flask.png";
+import git from "@/assets/images/skills/git.png";
+import gitlab from "@/assets/images/skills/gitlab.png";
+import idea from "@/assets/images/skills/idea.png";
+import phpstorm from "@/assets/images/skills/phpstorm.png";
+import webstorm from "@/assets/images/skills/webstorm.png";
 
 const langages = [
-  { imageSrc: "/src/assets/images/skills/java.png", imageAlt: "Java", label: "Java" },
-  { imageSrc: "/src/assets/images/skills/javascript.png", imageAlt: "JavaScript", label: "JavaScript" },
-  { imageSrc: "/src/assets/images/skills/php.png", imageAlt: "PHP", label: "PHP" },
-  { imageSrc: "/src/assets/images/skills/python.png", imageAlt: "Python", label: "Python" },
-  { imageSrc: "/src/assets/images/skills/html.png", imageAlt: "HTML", label: "HTML" },
-  { imageSrc: "/src/assets/images/skills/css.png", imageAlt: "CSS", label: "CSS" },
-  { imageSrc: "/src/assets/images/skills/postgresql.png", imageAlt: "PostgreSQL", label: "PostgreSQL" },
-  { imageSrc: "/src/assets/images/skills/bash.png", imageAlt: "Bash", label: "Bash" },
+  { imageSrc: java, imageAlt: "Java", label: "Java" },
+  { imageSrc: javascript, imageAlt: "JavaScript", label: "JavaScript" },
+  { imageSrc: php, imageAlt: "PHP", label: "PHP" },
+  { imageSrc: python, imageAlt: "Python", label: "Python" },
+  { imageSrc: html, imageAlt: "HTML", label: "HTML" },
+  { imageSrc: css, imageAlt: "CSS", label: "CSS" },
+  { imageSrc: postgresql, imageAlt: "PostgreSQL", label: "PostgreSQL" },
+  { imageSrc: bash, imageAlt: "Bash", label: "Bash" },
 ];
 
 const frameworks = [
-  { imageSrc: "/src/assets/images/skills/laravel.png", imageAlt: "Laravel", label: "Laravel" },
-  { imageSrc: "/src/assets/images/skills/vue_js.png", imageAlt: "Vue.js", label: "Vue.js" },
-  { imageSrc: "/src/assets/images/skills/flask.png", imageAlt: "Flask", label: "Flask" },
+  { imageSrc: laravel, imageAlt: "Laravel", label: "Laravel" },
+  { imageSrc: vue_js, imageAlt: "Vue.js", label: "Vue.js" },
+  { imageSrc: flask, imageAlt: "Flask", label: "Flask" },
 ];
 
 const outils = [
-  { imageSrc: "/src/assets/images/skills/git.png", imageAlt: "Git", label: "Git" },
-  { imageSrc: "/src/assets/images/skills/gitlab.png", imageAlt: "Gitlab", label: "Gitlab" },
-  { imageSrc: "/src/assets/images/skills/idea.png", imageAlt: "JetBrains IntelliJ Idea", label: "Idea" },
-  { imageSrc: "/src/assets/images/skills/phpstorm.png", imageAlt: "JetBrains PHPStorm", label: "PHPStorm" },
-  { imageSrc: "/src/assets/images/skills/webstorm.png", imageAlt: "JetBrains WebStorm", label: "WebStorm" },
+  { imageSrc: git, imageAlt: "Git", label: "Git" },
+  { imageSrc: gitlab, imageAlt: "Gitlab", label: "Gitlab" },
+  { imageSrc: idea, imageAlt: "JetBrains IntelliJ Idea", label: "Idea" },
+  { imageSrc: phpstorm, imageAlt: "JetBrains PHPStorm", label: "PHPStorm" },
+  { imageSrc: webstorm, imageAlt: "JetBrains WebStorm", label: "WebStorm" },
 ];
 </script>
 
@@ -158,10 +174,6 @@ h2 {
 
   h2 {
     font-size: 25px;
-  }
-
-  .skill p {
-    font-size: 15px;
   }
 }
 

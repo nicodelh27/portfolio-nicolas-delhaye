@@ -10,7 +10,7 @@
 <script setup>
 defineProps({
   imageSrc: {
-    type: String,
+    type: Image,
     required: true
   },
   imageAlt: {
