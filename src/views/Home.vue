@@ -38,7 +38,7 @@
         d'améliorer ma communication et de travailler ma relation client.
         Tout ceci fait que je suis extrêmement sociable et j'adore le contact humain.
         <br><br>
-        <span class="emoji">🏖️</span> En dehors de l’informatique, j'aime beaucoup sortir et m'amuser. J'aime également avoir des moments où je peux me relâcher, c'est ce que m'apporte le sport.
+        <span class="emoji">🏖️</span> En dehors de l’informatique, j'aime beaucoup sortir et m'amuser. J'aime aussi avoir des moments où je peux me relâcher, c'est ce que m'apporte le sport.
         Je m'intéresse également grandement à l'investissement de manière générale.
       </p>
 

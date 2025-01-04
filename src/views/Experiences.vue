@@ -105,7 +105,7 @@ const academicExperiences = ref([
     location: "Carvin",
     period: "Septembre 2020 - Juin 2023",
     responsibilities: [
-      "Spécialités mathématiques et sciences physiques.",
+      "Spécialités Mathématiques et Sciences physiques.",
       "Mention très bien, section européenne anglais."
     ],
     skills: ["Mathématiques", "Physiques", "Anglais"]
