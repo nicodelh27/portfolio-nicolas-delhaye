@@ -67,6 +67,12 @@ defineProps({
   font-weight: bold;
 }
 
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 19px;
+  }
+}
+
 .card-subtitle {
   font-size: 18px;
   color: gray;

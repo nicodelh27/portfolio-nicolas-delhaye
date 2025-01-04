@@ -17,7 +17,10 @@
         <!-- Colonne 2 - À propos -->
         <div class="col-12 col-sm-6 col-md-4">
           <h3>À propos</h3>
-          <p class="text-white">Je suis un développeur passionné par les technologies web. Découvrez mes compétences et projets ici !</p>
+          <p class="text-white">
+            Bienvenue sur mon portfolio ! N'hésitez pas à aller découvrir les différentes sections du site
+            pour en apprendre plus sur moi.
+          </p>
         </div>
 
         <!-- Colonne 3 - Contact -->

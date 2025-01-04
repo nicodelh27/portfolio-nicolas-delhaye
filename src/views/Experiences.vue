@@ -6,7 +6,7 @@
       <div class="col-12 col-lg-6 mb-4">
         <h2 class="text-center">Professionnelles</h2>
         <div class="row">
-          <div class="col-12 mb-4" v-for="(experience, index) in professionalExperiences" :key="index">
+          <div class="col-12 mb-4" v-for="(experience, index) in professionalExperiences" :key="index" data-aos="fade-left">
             <ExperienceCard
                 :id="index"
                 :title="experience.title"
@@ -24,7 +24,7 @@
       <div class="col-12 col-lg-6 mb-4">
         <h2 class="text-center">Scolaires</h2>
         <div class="row">
-          <div class="col-12 mb-4" v-for="(experience, index) in academicExperiences" :key="index">
+          <div class="col-12 mb-4" v-for="(experience, index) in academicExperiences" :key="index" data-aos="fade-left">
             <ExperienceCard
                 :id="index + professionalExperiences.length"
                 :title="experience.title"
@@ -105,7 +105,7 @@ const academicExperiences = ref([
     location: "Carvin",
     period: "Septembre 2020 - Juin 2023",
     responsibilities: [
-      "Spécialités mathématiques et sciences physiques.",
+      "Spécialités Mathématiques et Sciences physiques.",
       "Mention très bien, section européenne anglais."
     ],
     skills: ["Mathématiques", "Physiques", "Anglais"]
