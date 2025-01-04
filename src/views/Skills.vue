@@ -71,12 +71,12 @@ import webstorm from "@/assets/images/skills/webstorm.png";
 
 const langages = [
   { imageSrc: java, imageAlt: "Java", label: "Java" },
-  { imageSrc: javascript, imageAlt: "JavaScript", label: "JavaScript" },
   { imageSrc: php, imageAlt: "PHP", label: "PHP" },
-  { imageSrc: python, imageAlt: "Python", label: "Python" },
+  { imageSrc: javascript, imageAlt: "JavaScript", label: "JavaScript" },
+  { imageSrc: postgresql, imageAlt: "PostgreSQL", label: "PostgreSQL" },
   { imageSrc: html, imageAlt: "HTML", label: "HTML" },
   { imageSrc: css, imageAlt: "CSS", label: "CSS" },
-  { imageSrc: postgresql, imageAlt: "PostgreSQL", label: "PostgreSQL" },
+  { imageSrc: python, imageAlt: "Python", label: "Python" },
   { imageSrc: bash, imageAlt: "Bash", label: "Bash" },
 ];
 
