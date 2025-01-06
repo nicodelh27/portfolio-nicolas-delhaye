@@ -91,17 +91,17 @@ import reseau from '@/assets/images/projects/reseau.jpg'
 const projects = [
   {
     title: 'Bomberman',
-    description: 'Reproduction du jeu vidéo Bomberman en Java et JavaFX et création d\'un exécutable',
+    description: 'Reproduction du jeu vidéo Bomberman en Java et JavaFX et création d\'un exécutable.',
     img: bomberman1
   },
   {
     title: 'Juste Prix',
-    description: 'Création du jeu iconique du Juste Prix en python et Flask grâce à une API repertoriant les produits d\'Amazon',
+    description: 'Création du jeu iconique du Juste Prix en python et Flask grâce à une API repertoriant les produits d\'Amazon.',
     img: flask1
   },
   {
     title: 'Conception d\'un réseau',
-    description: 'Protocole TCP/IP, mise en place du routage, configuration des services DHCP/DNS/HTTP',
+    description: 'Protocole TCP/IP, mise en place du routage, configuration des services DHCP/DNS/HTTP.',
     img: reseau
   }
 ]
