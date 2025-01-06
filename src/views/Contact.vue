@@ -59,7 +59,7 @@ li a {
   color: var(--darker-blue-color);
   font-size: 20px;
   text-decoration: none;
-  word-break: break-word;
+  word-break: break-all;
 }
 
 a:hover {
