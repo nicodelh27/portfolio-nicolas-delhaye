@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="row d-flex justify-content-center gx-md-5">
-      <h2 class="text-center" id="titre_a_propos">À propos</h2>
+      <h2 class="text-center text-md-start" id="titre_a_propos">À propos</h2>
       <div class="info col-12 col-md-4">
         <p>
           <span class="emoji">🌟</span> Je suis quelqu'un de très réfléchi et logique, j'adore résoudre des problèmes et trouver des solutions.
