@@ -27,21 +27,28 @@
         </a>
       </div>
     </div>
-    <div class="row d-flex justify-content-center">
-      <h2 class="text-center">À propos</h2>
-      <p class="info">
-        <span class="emoji">🌟</span> Je suis quelqu'un de très réfléchi et logique, j'adore résoudre des problèmes et trouver des solutions.
-        Je suis également très organisé et j'adore aller au bout de ce que je fais.
-        Cela est lié à mon côté ambitieux, je prends grand plaisir à me surpasser.
-        <br><br>
-        <span class="emoji">🤝</span> De plus, grâce à mes différentes <router-link to="/experiences">expériences</router-link> dans de nombreux domaines, j'ai eu l'occasion de travailler en équipe,
-        d'améliorer ma communication et de travailler ma relation client.
-        Tout ceci fait que je suis extrêmement sociable et j'adore le contact humain.
-        <br><br>
-        <span class="emoji">🏖️</span> En dehors de l’informatique, j'aime beaucoup sortir et m'amuser. J'aime aussi avoir des moments où je peux me relâcher, c'est ce que m'apporte le sport.
-        Je m'intéresse également grandement à l'investissement de manière générale.
-      </p>
-
+    <div class="row d-flex justify-content-center gx-md-5">
+      <h2 class="text-center" id="titre_a_propos">À propos</h2>
+      <div class="info col-12 col-md-4">
+        <p>
+          <span class="emoji">🌟</span> Je suis quelqu'un de très réfléchi et logique, j'adore résoudre des problèmes et trouver des solutions.
+          Je suis également très organisé et j'adore aller au bout de ce que je fais.
+          Cela est lié à mon côté ambitieux, je prends grand plaisir à me surpasser.
+        </p>
+      </div>
+      <div class="info col-12 col-md-4">
+        <p>
+          <span class="emoji">🤝</span> De plus, grâce à mes différentes <router-link to="/experiences">expériences</router-link> dans de nombreux domaines, j'ai eu l'occasion de travailler en équipe,
+          d'améliorer ma communication et de travailler ma relation client.
+          Tout ceci fait que je suis extrêmement sociable et j'adore le contact humain.
+        </p>
+      </div>
+      <div class="info col-12 col-md-4">
+        <p>
+          <span class="emoji">🏖️</span> En dehors de l’informatique, j'aime beaucoup sortir et m'amuser. J'aime aussi avoir des moments où je peux me relâcher, c'est ce que m'apporte le sport.
+          Je m'intéresse également grandement à l'investissement de manière générale.
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -74,10 +81,14 @@
   h2 {
     font-size: 30px;
   }
-  img {
-    width: 350px;
-  }
 }
+
+p {
+  text-align: justify;
+  width: 90%;
+}
+
+/* Image */
 
 .image-container {
   max-width: 100%; /* S'assure que le conteneur ne dépasse pas la largeur */
@@ -86,22 +97,25 @@
   align-items: center;
 }
 
-@media (max-width: 768px) {
-  .image-container {
-    justify-content: center;
-  }
-}
-
 img {
   width: 400px;
   max-width: 100%; /* Empêche l'image de dépasser la largeur disponible */
   height: auto; /* Maintient les proportions */
 }
 
-p {
-  text-align: justify;
-  width: 90%;
+@media (max-width: 768px) {
+  .image-container {
+    justify-content: center;
+  }
 }
+
+@media (max-width: 576px) {
+  img {
+    width: 350px;
+  }
+}
+
+/* Boutons */
 
 .btn {
   background-color: var(--light-blue-color);
@@ -132,8 +146,27 @@ p {
   }
 }
 
+/* À propos */
+
 .info {
-  width: 80%;
+  text-align: center;
+  margin-bottom: 20px; /* Espace entre les paragraphes sur petits écrans */
+}
+
+#titre_a_propos {
+  margin-bottom: 30px;
+}
+
+.info p {
+  text-align: justify;
+  width: 100%;
+  margin: auto;
+}
+
+@media (max-width: 576px) {
+  .info p{
+    width: 90%;
+  }
 }
 
 .info br {
