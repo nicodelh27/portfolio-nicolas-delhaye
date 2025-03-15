@@ -1,4 +1,7 @@
 <template>
+  <div class="arrow-container" :class="{hide : isMenuOpen}">
+    <img src="@/assets/images/arrow.png" alt="Clique ici pour en découvrir plus sur moi" class="arrow-img" />
+  </div>
   <div class="container">
     <div class="row mb-5">
       <div class="col-12 col-md-6 information">
@@ -54,6 +57,10 @@
 </template>
 
 <script setup>
+
+import {inject} from "vue";
+
+const isMenuOpen = inject('isMenuOpen');
 </script>
 
 <style scoped>
@@ -177,5 +184,42 @@ img {
 .info span.emoji {
   font-size: 1.2em;
   margin-right: 10px;
+}
+
+
+/* Flèche */
+.arrow-container {
+  display: none;
+  position: absolute;
+  top: -30px; /* Ajuste selon ton design */
+  right: 30px; /* Ajuste selon l'emplacement du burger */
+  text-align: center;
+  z-index: 1; /* Derrière le burger */
+}
+
+.arrow-img {
+  width: 200px; /* Ajuste la taille */
+  animation: translateRotate 1s;
+}
+
+@keyframes translateRotate {
+  0% {
+    transform: translate(20px, 20px) rotate(50deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .arrow-container {
+    display: block; /* Affiche uniquement sur mobile */
+  }
+}
+
+.hide {
+  display: none;
 }
 </style>
