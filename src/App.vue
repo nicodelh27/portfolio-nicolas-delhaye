@@ -10,7 +10,7 @@
 <script setup>
 import Menu from './components/Menu.vue'
 import Footer from './components/Footer.vue'
-import {onMounted} from "vue";
+import {onMounted, provide, ref} from "vue";
 import AOS from 'aos';
 
 onMounted(() => {
@@ -34,6 +34,15 @@ window.addEventListener('scroll', function() {
   // Met à jour la taille de l'arrière-plan de la barre de progression
   scroller.style.backgroundSize = `${scrollPercentage}% 5px`;
 });
+
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+}
+
+provide('toggleMenu', toggleMenu);
+provide('isMenuOpen', isMenuOpen);
 </script>
 
 <style>
