@@ -37,14 +37,11 @@ h2 {
 }
 
 @media (max-width: 576px) {
-  h1 {
-    font-size: 50px;
-  }
   h2 {
     font-size: 20px;
   }
-  li a {
-    font-size: 15px;
+  a {
+    font-size: 15px !important;
   }
 }
 

@@ -175,18 +175,14 @@ const projects = [
 }
 
 @media (max-width: 576px) {
-  h1 {
-    font-size: 50px;
-  }
-  h2 {
-    font-size: 30px;
-  }
   #description {
     width: 80%; /* Réduire davantage sur les très petits écrans */
   }
+
   img {
     width: 250px; /* Réduire la taille de l'image */
   }
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     width: 30px;

@@ -80,16 +80,6 @@ const isMenuOpen = inject('isMenuOpen');
   }
 }
 
-@media (max-width: 576px) {
-  h1 {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-}
-
 p {
   text-align: justify;
   width: 90%;

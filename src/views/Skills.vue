@@ -108,7 +108,6 @@ h1 {
   margin-top: 50px;
 }
 
-
 h2 {
   padding-left: 15px;
   border-left: 2px solid var(--light-blue-color);
@@ -161,26 +160,8 @@ h2 {
     grid-template-columns: repeat(3, 1fr); /* Passer à 3 colonne sur petits écrans */
   }
 
-  h1 {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
   .row {
     gap: 30px;
-  }
-}
-
-@media (max-width: 576px) {
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 25px;
   }
 }
 
