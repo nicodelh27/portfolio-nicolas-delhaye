@@ -6,7 +6,7 @@
       <div class="col-12 col-lg-6 mb-4">
         <h2 class="text-center">Professionnelles</h2>
         <div class="row">
-          <div class="col-12 mb-4" v-for="(experience, index) in professionalExperiences" :key="index" data-aos="fade-left">
+          <div class="col-12 mb-4" v-for="(experience, index) in professionalExperiences" :key="index">
             <ExperienceCard
                 :id="index"
                 :title="experience.title"
@@ -24,7 +24,7 @@
       <div class="col-12 col-lg-6 mb-4">
         <h2 class="text-center">Scolaires</h2>
         <div class="row">
-          <div class="col-12 mb-4" v-for="(experience, index) in academicExperiences" :key="index" data-aos="fade-left">
+          <div class="col-12 mb-4" v-for="(experience, index) in academicExperiences" :key="index">
             <ExperienceCard
                 :id="index + professionalExperiences.length"
                 :title="experience.title"
@@ -48,10 +48,33 @@ import ExperienceCard from '@/components/ExperienceCard.vue';
 // Liste des expériences professionnelles
 const professionalExperiences = ref([
   {
+    title: "Alternance - Développeur Web/IA",
+    company: "Widop",
+    location: "Lille",
+    period: "Juillet 2025 - Présent",
+    responsibilities: [
+      "Veille technologique sur les dernières avancées en IA.",
+      "Utilisation du bundle Symfony AI pour intégrer des fonctionnalités d'IA dans les projets web.",
+      "Apprentissage du framework LangChain en Python pour créer des solutions complexes.",
+    ],
+    skills: ["Symfony", "Python", "LangChain", "Docker", "Git"]
+  },
+  {
+    title: "Stage - Développeur Web Symfony",
+    company: "Widop",
+    location: "Lille",
+    period: "Avril 2025 - Juillet 2025",
+    responsibilities: [
+      "Apprentissage détaillé de PHP et du framework Symfony.",
+      "Création d'une application web interne avec Symfony.",
+    ],
+    skills: ["PHP", "Symfony", "Gestion de projet", "Git", "Docker"]
+  },
+  {
     title: "Serveur lors d'événements",
     company: "Dupont Restauration",
     location: "Stade Bollaert, Lens",
-    period: "Octobre 2023 - Présent",
+    period: "Octobre 2023 - Janvier 2025",
     responsibilities: [
       "Service des clients lors des buffets VIP au stade Bollaert de Lens.",
       "Mise en place et débarrassage du matériel.",
@@ -71,17 +94,6 @@ const professionalExperiences = ref([
       "Respect du zoning et de la propreté du magasin."
     ],
     skills: ["Travail d'équipe", "Relation client", "Organisation"]
-  },
-  {
-    title: "Manutentionnaire entrepôt",
-    company: "FANDI emballages",
-    location: "Carvin",
-    period: "Février 2024",
-    responsibilities: [
-      "Chargement et déchargement de marchandises.",
-      "Organisation des stocks en entrepôt."
-    ],
-    skills: ["Rigueur", "Travail rapide"]
   }
 ]);
 
@@ -95,9 +107,10 @@ const academicExperiences = ref([
     responsibilities: [
       "Études approfondies en algorithmique, programmation et réseaux.",
       "Projets de développement web.",
-      "Conception et gestion de bases de données."
+      "Conception et gestion de bases de données.",
+      "Travail en équipe sur des projets concrets."
     ],
-    skills: ["POO", "Web", "SQL", "Réseaux/Systèmes", "Gestion de projet"]
+    skills: ["POO", "Web", "SQL", "Réseaux/Systèmes", "Gestion de projet", "Git", "Docker"]
   },
   {
     title: "Baccalauréat Scientifique",

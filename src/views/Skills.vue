@@ -52,6 +52,7 @@
 
 <script setup>
 import SkillCard from "@/components/SkillCard.vue";
+
 import java from "@/assets/images/skills/java.png";
 import javascript from "@/assets/images/skills/javascript.png";
 import php from "@/assets/images/skills/php.png";
@@ -60,9 +61,13 @@ import html from "@/assets/images/skills/html.png";
 import css from "@/assets/images/skills/css.png";
 import postgresql from "@/assets/images/skills/postgresql.png";
 import bash from "@/assets/images/skills/bash.png";
+
+import symfony from "@/assets/images/skills/symfony.png";
+import langchain from "@/assets/images/skills/langchain.png";
 import laravel from "@/assets/images/skills/laravel.png";
 import vue_js from "@/assets/images/skills/vue_js.png";
-import flask from "@/assets/images/skills/flask.png";
+
+import docker from "@/assets/images/skills/docker.png";
 import git from "@/assets/images/skills/git.png";
 import gitlab from "@/assets/images/skills/gitlab.png";
 import idea from "@/assets/images/skills/idea.png";
@@ -70,23 +75,25 @@ import phpstorm from "@/assets/images/skills/phpstorm.png";
 import webstorm from "@/assets/images/skills/webstorm.png";
 
 const langages = [
-  { imageSrc: java, imageAlt: "Java", label: "Java" },
   { imageSrc: php, imageAlt: "PHP", label: "PHP" },
+  { imageSrc: python, imageAlt: "Python", label: "Python" },
+  { imageSrc: java, imageAlt: "Java", label: "Java" },
   { imageSrc: javascript, imageAlt: "JavaScript", label: "JavaScript" },
   { imageSrc: postgresql, imageAlt: "PostgreSQL", label: "PostgreSQL" },
   { imageSrc: html, imageAlt: "HTML", label: "HTML" },
   { imageSrc: css, imageAlt: "CSS", label: "CSS" },
-  { imageSrc: python, imageAlt: "Python", label: "Python" },
   { imageSrc: bash, imageAlt: "Bash", label: "Bash" },
 ];
 
 const frameworks = [
+  { imageSrc: symfony, imageAlt: "Symfony", label: "Symfony" },
+  { imageSrc: langchain, imageAlt: "LangChain", label: "LangChain" },
   { imageSrc: laravel, imageAlt: "Laravel", label: "Laravel" },
   { imageSrc: vue_js, imageAlt: "Vue.js", label: "Vue.js" },
-  { imageSrc: flask, imageAlt: "Flask", label: "Flask" },
 ];
 
 const outils = [
+  { imageSrc: docker, imageAlt: "Docker", label: "Docker" },
   { imageSrc: git, imageAlt: "Git", label: "Git" },
   { imageSrc: gitlab, imageAlt: "Gitlab", label: "Gitlab" },
   { imageSrc: idea, imageAlt: "JetBrains IntelliJ Idea", label: "Idea" },
@@ -103,7 +110,7 @@ h1 {
 
 
 h2 {
-  padding-left: 10px;
+  padding-left: 15px;
   border-left: 2px solid var(--light-blue-color);
 }
 
@@ -143,15 +150,15 @@ h2 {
     margin: 0 auto; /* Centre la zone */
   }
   .langages {
-    grid-template-columns: repeat(3, 1fr); /* Passer à 2 colonnes sur petits écrans */
+    grid-template-columns: repeat(3, 1fr); /* Passer à 3 colonnes sur petits écrans */
   }
 
   .frameworks {
-    grid-template-columns: repeat(3, 1fr); /* Passer à 2 colonnes sur petits écrans */
+    grid-template-columns: repeat(3, 1fr); /* Passer à 3 colonnes sur petits écrans */
   }
 
   .outils {
-    grid-template-columns: repeat(3, 1fr); /* Passer à 1 colonne sur petits écrans */
+    grid-template-columns: repeat(3, 1fr); /* Passer à 3 colonne sur petits écrans */
   }
 
   h1 {
