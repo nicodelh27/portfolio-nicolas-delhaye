@@ -8,7 +8,7 @@
         <h1>Nicolas Delhaye</h1>
         <h2>Développeur informatique junior</h2>
         <p>Depuis tout jeune, je suis très fortement intéressé par tout ce qui touche à l'informatique.
-          J'en ai depuis fait ma spécialité. Je suis actuellement en deuxième année de BUT Informatique à l'IUT de Lens.
+          J'en ai depuis fait ma spécialité. Je suis actuellement en troisième année de BUT Informatique à l'IUT de Lens.
           J'y développe mes compétences en algorithmique, programmation, développement web, base de données, réseaux et systèmes.
         </p>
       </div>
@@ -34,22 +34,23 @@
       <h2 class="text-center text-md-start" id="titre_a_propos">À propos</h2>
       <div class="info col-12 col-md-4">
         <p>
-          <span class="emoji">🌟</span> Je suis quelqu'un de très réfléchi et logique, j'adore résoudre des problèmes et trouver des solutions.
+          <span class="emoji">💡</span> Je suis quelqu'un de très réfléchi et logique, j'adore résoudre des problèmes et trouver des solutions.
           Je suis également très organisé et j'adore aller au bout de ce que je fais.
           Cela est lié à mon côté ambitieux, je prends grand plaisir à me surpasser.
         </p>
       </div>
       <div class="info col-12 col-md-4">
         <p>
-          <span class="emoji">🤝</span> De plus, grâce à mes différentes <router-link to="/experiences">expériences</router-link> dans de nombreux domaines, j'ai eu l'occasion de travailler en équipe,
+          <span class="emoji">🗣️</span> De plus, grâce à mes différentes <router-link to="/experiences">expériences</router-link> dans de nombreux domaines, j'ai eu l'occasion de travailler en équipe,
           d'améliorer ma communication et de travailler ma relation client.
           Tout ceci fait que je suis extrêmement sociable et j'adore le contact humain.
         </p>
       </div>
       <div class="info col-12 col-md-4">
         <p>
-          <span class="emoji">🏖️</span> En dehors de l’informatique, j'aime beaucoup sortir et m'amuser. J'aime aussi avoir des moments où je peux me relâcher, c'est ce que m'apporte le sport.
-          Je m'intéresse également grandement à l'investissement de manière générale.
+          <span class="emoji">🎾️</span> En dehors de l’informatique, j'aime beaucoup sortir et m'amuser.
+          Je pratique de nombreuses activités comme le padel et le roundnet.
+          Je m'intéresse beaucoup aux différents sujets liés à l'intelligence artificielle et au machine learning.
         </p>
       </div>
     </div>
