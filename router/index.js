@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue';
 import Experiences from "@/views/Experiences.vue";
 import Projects from "@/views/Projects.vue";
 import Skills from "@/views/Skills.vue";
+import Certications from "@/views/Certications.vue";
 import Contact from "@/views/Contact.vue";
 
 const routes = [
@@ -37,6 +38,14 @@ const routes = [
         meta: {
             title: 'Projets | Nicolas Delhaye - IUT de Lens',
             description: 'Consultez mes projets réalisés et découvrez ce dont je suis capable !'
+        }
+    },
+    {
+        path: '/certifications',
+        component: Certications,
+        meta: {
+            title: 'Certifications | Nicolas Delhaye - IUT de Lens',
+            description: 'Découvrez les certifications que j\'ai obtenues !'
         }
     },
     {

@@ -39,6 +39,10 @@ defineProps({
   min-width: 0;
 }
 
+.skill:hover {
+  transform: rotate(0deg) scale(1.15);
+}
+
 /* Conteneur de l'image : maintient le carré */
 .image-wrapper {
   aspect-ratio: 1; /* Maintient un carré parfait */

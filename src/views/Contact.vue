@@ -1,5 +1,6 @@
 <template>
     <h1>Contact</h1>
+    <hr class="custom-line">
     <div id="contact">
       <h2>N'hésitez pas à me contacter par les moyens suivants :</h2>
       <ul class="list-unstyled" data-aos="fade-left">
@@ -15,11 +16,6 @@
 </template>
 
 <style scoped>
-
-h1 {
-  margin-top: 50px;
-  margin-bottom: 40px;
-}
 
 h2 {
   font-size: 30px;
@@ -37,14 +33,11 @@ h2 {
 }
 
 @media (max-width: 576px) {
-  h1 {
-    font-size: 50px;
-  }
   h2 {
     font-size: 20px;
   }
-  li a {
-    font-size: 15px;
+  a {
+    font-size: 15px !important;
   }
 }
 

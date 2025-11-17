@@ -16,11 +16,6 @@ const props = defineProps(['title', 'description', 'img'])
 .card {
   transform: rotate(0deg) scale(1);
   transition: transform 0.2s linear;
-  /*
-  border: 5px solid var(--light-blue-color);
-  padding: 5px;
-  border-radius: 10px;
-   */
 }
 
 .card:hover {
