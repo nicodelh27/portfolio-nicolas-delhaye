@@ -66,6 +66,11 @@ const isMenuOpen = inject('isMenuOpen');
 
 <style scoped>
 
+h1 {
+  margin-top: 0;
+  text-align: left;
+}
+
 .container {
   margin-top: 50px;
   margin-bottom: 80px;
@@ -78,6 +83,10 @@ const isMenuOpen = inject('isMenuOpen');
 
   p {
     margin: auto;
+  }
+
+  h1 {
+    text-align: center;
   }
 }
 

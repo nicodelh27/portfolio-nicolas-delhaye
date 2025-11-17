@@ -1,5 +1,6 @@
 <template>
   <h1>Expériences</h1>
+  <hr class="custom-line">
   <div class="container">
     <div class="row">
       <!-- Colonne des expériences professionnelles -->
@@ -126,15 +127,10 @@ const academicExperiences = ref([
 ]);
 </script>
 
-
 <style scoped>
 /* Marges pour les colonnes */
 .row {
   margin-top: 20px;
-}
-
-h1 {
-  margin-top: 50px;
 }
 
 h2 {

@@ -190,11 +190,6 @@ const projects = [
   }
 }
 
-h1 {
-  margin-top: 50px;
-  text-align: center;
-}
-
 h2 {
   text-align: center;
   margin-bottom: 30px;
@@ -204,13 +199,5 @@ h5 {
   color: var(--white-color);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-}
-
-.custom-line {
-  border: none;
-  width: 150px; /* Longueur de la ligne */
-  height: 3px; /* Épaisseur de la ligne */
-  background-color: var(--light-blue-color); /* Couleur personnalisée */
-  margin: 20px 0; /* Espace autour de la ligne */
 }
 </style>

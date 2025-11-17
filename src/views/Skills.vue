@@ -1,5 +1,6 @@
 <template>
   <h1>Compétences</h1>
+  <hr class="custom-line">
   <div class="container">
     <div class="row">
 
@@ -103,18 +104,13 @@ const outils = [
 </script>
 
 <style scoped>
-h1 {
-  text-align: center;
-  margin-top: 50px;
-}
-
 h2 {
   padding-left: 15px;
   border-left: 2px solid var(--light-blue-color);
 }
 
 .container{
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 /* Grille pour chaque section */
